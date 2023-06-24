@@ -1,0 +1,3 @@
+const certificate_paths = {'advanced_learning_algo.png': 'certificates\\advanced_learning_algo.png', 'cnn.png': 'certificates\\cnn.png', 'cs50ai.png': 'certificates\\cs50ai.png', 'cs50w.png': 'certificates\\cs50w.png', 'dl.png': 'certificates\\dl.png', 'dl_badge.png': 'certificates\\dl_badge.png', 'nn.png': 'certificates\\nn.png', 'rl.png': 'certificates\\rl.png', 'rl_and_recommendation.png': 'certificates\\rl_and_recommendation.png', 'sequential.png': 'certificates\\sequential.png', 'structuring_projects.png': 'certificates\\structuring_projects.png', 'supervised.png': 'certificates\\supervised.png', 'tuning.png': 'certificates\\tuning.png'}
+
+console.log(certificate_paths);
