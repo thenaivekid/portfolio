@@ -1,3 +1,54 @@
 h1{
 font-size: clamp(1.5rem,2vw,2rem)  !important;
 }
+
+.certificates_sec{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.carousel-image{
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 6px #cfc6c6;
+    opacity: 0;
+    animation: opacity_transition 3s infinite;
+}
+
+@keyframes opacity_transition{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.controls{
+    position: absolute;
+}
+
+#carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#all_certificates{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
