@@ -1,70 +1,70 @@
-console.log('Script loaded');
+// console.log('Script loaded');
 
-const images = ['', 'certificates/fuse.jpg', 'certificates/advanced_learning_algo.png', 'certificates/cnn.png', 'certificates/cs50ai.png', 'certificates/cs50w.png', 'certificates/dl.png', 'certificates/dl_badge.png', 'certificates/nn.png', 'certificates/rl.png', 'certificates/rl_and_recommendation.png', 'certificates/sequential.png', 'certificates/structuring_projects.png', 'certificates/supervised.png', 'certificates/tuning.png']
+// const images = ['', 'certificates/fuse.jpg', 'certificates/advanced_learning_algo.png', 'certificates/cnn.png', 'certificates/cs50ai.png', 'certificates/cs50w.png', 'certificates/dl.png', 'certificates/dl_badge.png', 'certificates/nn.png', 'certificates/rl.png', 'certificates/rl_and_recommendation.png', 'certificates/sequential.png', 'certificates/structuring_projects.png', 'certificates/supervised.png', 'certificates/tuning.png']
 
-var current_index = 1;
-var total_images = images.length;
+// var current_index = 1;
+// var total_images = images.length;
 
-document.addEventListener("DOMContentLoaded", function () {
-    setInterval(update, 3000);
+// document.addEventListener("DOMContentLoaded", function () {
+//     setInterval(update, 3000);
 
-});
+// });
 
-function show_image(index) {
-    var image = document.createElement("img");
-    image.src = images[index];
-    image.className = "carousel-image";
-    image.id = `certificate${index}`;
-    document.getElementById("certificate_sec").appendChild(image);
-}
+// function show_image(index) {
+//     var image = document.createElement("img");
+//     image.src = images[index];
+//     image.className = "carousel-image";
+//     image.id = `certificate${index}`;
+//     document.getElementById("certificate_sec").appendChild(image);
+// }
 
-function remove_image(index){
-    if (document.getElementById(`certificate${index}`)){
-        document.getElementById(`certificate${index}`).remove();
-    }
-}
+// function remove_image(index){
+//     if (document.getElementById(`certificate${index}`)){
+//         document.getElementById(`certificate${index}`).remove();
+//     }
+// }
 
-function show_next_image() {
-    remove_image(current_index);
-    if (current_index == total_images - 1){
-        current_index = 1;
-    }else{
-        current_index += 1;
-    }
-    show_image(current_index);
-}
+// function show_next_image() {
+//     remove_image(current_index);
+//     if (current_index == total_images - 1){
+//         current_index = 1;
+//     }else{
+//         current_index += 1;
+//     }
+//     show_image(current_index);
+// }
 
-function show_previous_image() {
-    remove_image(current_index);
-    if (current_index == 1){
-        current_index = total_images - 1;
-    }else{
-    current_index -= 1;
-    }
-    show_image(current_index);
-}
+// function show_previous_image() {
+//     remove_image(current_index);
+//     if (current_index == 1){
+//         current_index = total_images - 1;
+//     }else{
+//     current_index -= 1;
+//     }
+//     show_image(current_index);
+// }
 
-function update(){
-    console.log("running");
-    if (current_index == 0){
-        show_image(current_index + 1);
-        current_index += 2;
-        return;
-    } else{
-        remove_image(current_index);
-        show_next_image();
-    }
-}
+// function update(){
+//     console.log("running");
+//     if (current_index == 0){
+//         show_image(current_index + 1);
+//         current_index += 2;
+//         return;
+//     } else{
+//         remove_image(current_index);
+//         show_next_image();
+//     }
+// }
 
-function show_all_images(){
-    for (let i = 1; i < total_images; i++){
-        var image = document.createElement("img");
-        image.src = images[i];
-        image.height = "200";
-        image.width = "300";
-        document.getElementById("all_certificates").appendChild(image);
-    }
-}
+// function show_all_images(){
+//     for (let i = 1; i < total_images; i++){
+//         var image = document.createElement("img");
+//         image.src = images[i];
+//         image.height = "200";
+//         image.width = "300";
+//         document.getElementById("all_certificates").appendChild(image);
+//     }
+// }
 
 // Define socialLinks in the global scope
 const socialLinks = [
@@ -207,10 +207,236 @@ function createEducationCards() {
     });
 }
 
+const projectsData = [
+    {
+        category: "ml, mobile app",
+        name: "Face Recognition App",
+        description: "Face recognition mobile app with custom trained siamese neural network",
+        hosted_link: "",
+        colaborators: "Anil Shrestha, Jeevan Neupane",
+        code_link: "https://github.com/thenaivekid/Face-recognition-mobile-app",
+        image: "projects/siamese_nn.png",
+        video_demo_link: ""
+    },
+    {
+        category: "Front end",
+        name: "Study Tracker",
+        description: "A simple web app to track study patterns and durations during exam season.",
+        hosted_link: "https://thenaivekid.github.io/study-tracker/",
+        colaborators: "",
+        code_link: "https://github.com/thenaivekid/study-tracker",
+        image: "projects/Screenshot (379).png",
+        video_demo_link: ""
+    },
+    {
+        category: "Data Science",
+        name: "Queue Management System Data Science",
+        description: "SQL queries to efficiently retrieve data, data extraction, EDA, visualization",
+        hosted_link: "",
+        colaborators: "",
+        code_link: "https://github.com/thenaivekid/Queue-Management-System-Data-Science",
+        image: "projects/service_x_counter_summary.png, projects/queue_viz.png",
+        video_demo_link: ""
+    },
+    {
+        category: "Data Science, Survey",
+        name: "AI in Engineering Education, Pulchowk Campus",
+        description: "Use of AI tools by students",
+        hosted_link: "",
+        colaborators: "",
+        code_link: "",
+        image: "projects/ai_er.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ml, mobile app",
+        name: "Easy Reports",
+        description: "Medical document simplifier",
+        hosted_link: "",
+        colaborators: "Sadhana Panthi",
+        code_link: "",
+        image: "projects/easy_reports.png",
+        video_demo_link: "https://www.youtube.com/watch?v=3A_vL0BVWR0"
+    },
+    {
+        category: "ML",
+        name: "Transformer Text to Speech from scratch",
+        description: "",
+        hosted_link: "",
+        colaborators: "Dipan Bartaula",
+        code_link: "https://github.com/thenaivekid/Transformer-text-to-speech-from-scrach",
+        image: "projects/Transformer_text_to_speech.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ML, Web app",
+        name: "InfluencerInsight",
+        description: "A web app to analyze social media comments using BERT deep learning model.",
+        hosted_link: "",
+        colaborators: "Anil Shrestha, Jeevan Neupane",
+        code_link: "",
+        image: "projects/Screenshot-2019-03-11-12.31.44.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ML, Web app",
+        name: "E-Gunaso",
+        description: "Quora-like app to find similar complaints about government offices.",
+        hosted_link: "",
+        colaborators: "Anil Shrestha, Jeevan Neupane, Sadhana Panthi",
+        code_link: "",
+        image: "projects/comment-opinion-review-support.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ml, mobile app",
+        name: "VeggieTrends",
+        description: "Trend analysis and prediction of vegetable prices and production.",
+        hosted_link: "",
+        colaborators: "Sadhana Panthi",
+        code_link: "",
+        image: "projects/veggie.png",
+        video_demo_link: ""
+    },
+    {
+        category: "C++, OOP",
+        name: "Zippe",
+        description: "File compression desktop app using Huffman and LZ encoding.",
+        hosted_link: "",
+        colaborators: "Anil Shrestha, Jeevan Neupane",
+        code_link: "https://github.com/thenaivekid/Zippe",
+        image: "projects/zippe_compression.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ML, Web app",
+        name: "BalenAI",
+        description: "Real-time AI app to detect smoking through CCTV and alert authorities.",
+        hosted_link: "",
+        colaborators: "Anil Shrestha, Jeevan Neupane, Sadhana Panthi",
+        code_link: "",
+        image: "projects/balen_ai_smoking_detection.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ML, Web app",
+        name: "Autograder",
+        description: "Automatically grade and comment on student assignments.",
+        hosted_link: "",
+        colaborators: "Jeevan Neupane, Sadhana Panthi",
+        code_link: "https://github.com/thenaivekid/autograder",
+        image: "projects/autograder_gradescope.png",
+        video_demo_link: ""
+    },
+    {
+        category: "Front end",
+        name: "Infinitely Nested Comments",
+        description: "",
+        hosted_link: "",
+        colaborators: "",
+        code_link: "https://github.com/thenaivekid/reddit-comments",
+        image: "projects/reddit_comments.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ML, Web app",
+        name: "Nepali OCR",
+        description: "Letter segmentation using classic algorithms and trained image classifiers.",
+        hosted_link: "",
+        colaborators: "",
+        code_link: "https://github.com/thenaivekid/Nepali-OCR",
+        image: "projects/nepali_ocr.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ML",
+        name: "Speech Master",
+        description: "Audio and video sentiment analysis tool for actor training.",
+        hosted_link: "",
+        colaborators: "Sadhana Panthi",
+        code_link: "",
+        image: "projects/speech_master.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ML",
+        name: "Neural Coloring",
+        description: "Turning black and white images into colorful images using UNET CNN.",
+        hosted_link: "",
+        colaborators: "",
+        code_link: "https://github.com/thenaivekid/B-W-horses-to-Colorful-horse",
+        image: "projects/neural_coloring.png",
+        video_demo_link: ""
+    },
+    {
+        category: "Web app",
+        name: "AatmaPrem",
+        description: "A self-love website for personal improvement and journaling.",
+        hosted_link: "",
+        colaborators: "",
+        code_link: "",
+        image: "projects/aatma_prem.png",
+        video_demo_link: ""
+    },
+    {
+        category: "ML, Web app",
+        name: "Olympic Sentiment Analysis",
+        description: "Sentiment analysis from scratch using transformer for Tokyo Olympics 2021 tweets.",
+        hosted_link: "",
+        colaborators: "Sadhana Panthi",
+        code_link: "https://github.com/thenaivekid/olympic-sentiment-analysis",
+        image: "projects/olympic_sentiment_analysis.png",
+        video_demo_link: "https://youtu.be/5lwiuEWD7ko"
+    },
+    {
+        category: "ML, Web app",
+        name: "House Price Prediction in Kathmandu Valley",
+        description: "House price prediction using class ML models.",
+        hosted_link: "",
+        colaborators: "Anuj Gupta",
+        code_link: "https://github.com/thenaivekid/House-Price-Prediction",
+        image: "projects/house_price_prediction.png",
+        video_demo_link: ""
+    }
+];
+
+function createProjectCards() {
+    const container = document.getElementById('projects-container');
+    if (!container) {
+        console.error('Projects container not found');
+        return;
+    }
+
+    projectsData.forEach((project, index) => {
+        const card = document.createElement('div');
+        card.className = "custom_card max-w-md mx-auto bg-[rgb(26,27,27)] rounded-xl shadow-md overflow-hidden hover:scale-105 transition duration-500 ease-in-out p-4 mb-4 cursor-pointer";
+        card.style.width = "calc(33.333% - 1rem)";
+
+        card.onclick = () => window.location.href = `project-detail.html?id=${index}`;
+
+        card.innerHTML = `
+            <div class="h-full flex flex-col">
+                <div class="flex-shrink-0">
+                    <img class="w-full h-48 object-cover" src="${project.image}" alt="${project.name}">
+                </div>
+                <div class="p-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-2">${project.name}</h3>
+                        <p class="text-sm text-gray-400">${project.category}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
 // Make sure this line is present at the end of your scripts.js file
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded');
     createSocialLinks();
     createInterestsSection();
     createEducationCards();
+    createProjectCards();
 });
