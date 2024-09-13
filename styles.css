@@ -1,53 +1,58 @@
-h1{
-font-size: clamp(1.5rem,2vw,2rem)  !important;
+:root {
+    --shadow-color: #cfc6c6;
+    --transition-duration: 3s;
 }
 
-.certificates_sec{
+h1 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.certificates_sec,
+#carousel,
+#all_certificates {
+    display: flex;
     width: 100%;
     margin: 0 auto;
-    position: relative;
-    display: flex;
+}
+
+.certificates_sec {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+position: relative;
 }
 
-.carousel-image{
+.carousel-image {
     border-radius: 10px;
-    box-shadow: 3px 3px 5px 6px #cfc6c6;
+box-shadow: 3px 3px 5px 6px var(--shadow-color);
     opacity: 0;
-    animation: opacity_transition 3s infinite;
+animation: opacity_transition var(--transition-duration) infinite;
 }
 
-@keyframes opacity_transition{
-    0%{
+@keyframes opacity_transition {
+
+    0%,
+    100% {
         opacity: 0;
     }
-    25%{
+
+    25%,
+    75% {
         opacity: 1;
-    }
-    75%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
     }
 }
 
-.controls{
+.controls {
     position: absolute;
 }
 
-#carousel{
-    display: flex;
+#carousel {
     justify-content: center;
     align-items: center;
 }
 
-#all_certificates{
-    display: flex;
+#all_certificates {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0 auto;
 }
