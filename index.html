@@ -1,67 +1,489 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <script src="scripts.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashok Neupane — AI Engineer</title>
+  <meta name="description" content="AI Engineer building LLM, RAG, computer vision, diffusion, and 3D generative AI systems. AI researcher based in Kathmandu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=JetBrains+Mono:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="w-full bg-[rgb(22,23,23)] ">
-     
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col gap-7 md:flex-row items-center">
-            <a class="flex t items-center"><p class="text-white">neupane.ashok.9696@gmail.com</p></a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" id="social-links">
-                <!-- Social media links will be inserted here by JavaScript -->
-            </nav>
-            <div class="bg-[rgb(29,29,28)] h-1 w-full mx-auto"></div>
+<body>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ░░ NAV ░░ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">A.P.N</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ MOBILE MENU ░░ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#awards" class="mobile-link">Awards</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-lines" aria-hidden="true">
+      <div class="gl gl-v1"></div>
+      <div class="gl gl-v2"></div>
+      <div class="gl gl-h1"></div>
+      <div class="gl gl-h2"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span>Open to work · Based in Kathmandu, Nepal</span>
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="name-line">Ashok</span>
+        <span class="name-line accent-line">Neupane</span>
+      </h1>
+      <p class="hero-title reveal"><span class="mono">{ </span>AI Engineer | Software Engineer<span class="mono"> }</span></p>
+      <p class="hero-sub reveal">
+        Building systems at the frontier of LLMs, diffusion models, 3D generative AI,
+        and computer vision — from research prototype to production.
+      </p>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num">2.5<span class="stat-unit">yrs</span></span>
+          <span class="stat-label">Freelance AI</span>
         </div>
-    </header>  
-
-    <div class="mt-20"></div>
-
-    <div class="flex flex-col justify-center items-center">
-        <div>
-            <img src="assests/myphoto.jpg" alt="my photo" class="h-[10rem] md:h-[15rem] rounded-full border-2 border-gray-500">
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num">255+<span class="stat-unit">hrs</span></span>
+          <span class="stat-label">Teaching AI</span>
         </div>
-        <div><p class="text-white">Hi I am Ashok Neupane.👋</p></div>
-<div id="interests" class="text-center font-semibold">
-    <!-- Interests will be inserted here by JavaScript -->
-</div>
-    </div>
-
-
-
-
-    <div class="flex justify-end">
-        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">
-        <a href="accomplishments.html">See My Certificates</a>
-        </button>
-    </div>
-
-
-<div class="w-full">
-        <div class="bg-[rgb(29,29,28)] h-1 w-full mx-auto"></div>
-        <div class="my-12">
-            <h1 class="text-white text-center text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide">
-                Education
-            </h1>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Hackathon Wins</span>
         </div>
-        <div id="education-container" class="p-4 flex flex-wrap justify-evenly">
-            <!-- Education cards will be inserted here by JavaScript -->
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Research Papers</span>
         </div>
+      </div>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="mailto:neupane.ashok.9696@gmail.com" class="btn-ghost">Get in Touch</a>
+      </div>
     </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="mono">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <div class="my-12">
-        <h1 class="text-white text-center text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide">
-            Projects
-        </h1>
+  <!-- ░░ ABOUT ░░ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">01 /</span> About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading reveal">Engineering AI that actually ships.</h2>
+          <p class="body-text reveal">
+            I'm an AI Engineer finishing my Computer Engineering degree at Pulchowk Campus, Tribhuvan University — where I ranked <strong>47th nationally</strong> among 15,000+ candidates. I've spent the past three years building AI systems that live beyond notebooks: deployed RAG agents, fine-tuned diffusion pipelines, 3D scene generators, and deepfake detectors.
+          </p>
+          <p class="body-text reveal">
+            My work spans both ends of the AI stack. On the research side, I have a paper accepted at <strong>CVPR 2026</strong> and another under review. On the engineering side, I've delivered production systems for freelance clients, shipped at Sceneverse.ai, and taught 255+ hours of AI to developers across Nepal.
+          </p>
+          <p class="body-text reveal">
+            I care about systems that are <em>controllable, efficient, and real</em> — not demos that look good in slides.
+          </p>
+          <div class="about-links reveal">
+            <a href="https://www.linkedin.com/in/ashok-prasad-neupane/" target="_blank" rel="noopener" class="about-link">LinkedIn ↗</a>
+            <a href="https://github.com/ashok-neupane" target="_blank" rel="noopener" class="about-link">GitHub ↗</a>
+            <a href="https://medium.com/@neupane.ashok.9696" target="_blank" rel="noopener" class="about-link">Medium ↗</a>
+          </div>
+        </div>
+        <div class="about-skills reveal">
+          <div class="skills-block">
+            <h3 class="skills-cat">AI / ML</h3>
+            <div class="skill-tags">
+              <span>PyTorch</span><span>TensorFlow</span><span>Transformers</span>
+              <span>Diffusion Models</span><span>RLHF</span><span>RAG</span>
+              <span>VLMs</span><span>BERT</span><span>Edge AI</span>
+            </div>
+          </div>
+          <div class="skills-block">
+            <h3 class="skills-cat">LLM / GenAI</h3>
+            <div class="skill-tags">
+              <span>LLM Applications</span><span>Embeddings</span><span>Vector Search</span>
+              <span>Prompt Engineering</span><span>OpenAI API</span><span>LangChain</span>
+              <span>Inference Optimization</span>
+            </div>
+          </div>
+          <div class="skills-block">
+            <h3 class="skills-cat">Engineering</h3>
+            <div class="skill-tags">
+              <span>Python</span><span>C/C++</span><span>FastAPI</span>
+              <span>Docker</span><span>PostgreSQL</span><span>React</span>
+              <span>AWS</span><span>Azure</span><span>CUDA/GPU</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="projects-container" class="p-4 flex flex-wrap justify-evenly">
-        <!-- Project cards will be inserted here by JavaScript -->
-    </div>
+  </section>
 
+  <!-- ░░ EXPERIENCE ░░ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">02 /</span> Experience</div>
+      <h2 class="section-heading reveal">Where I've Built Things</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <span class="timeline-date mono">Jan 2025 — May 2025</span>
+            <span class="timeline-tag">Full-time</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Machine Learning Engineer</h3>
+            <p class="timeline-company">Sceneverse.ai</p>
+            <ul class="timeline-points">
+              <li>Built 3D generative AI training and inference workflows for indoor scene synthesis, focusing on controllability, realism, and scalable experimentation.</li>
+              <li>Developed synthetic data pipelines for photorealistic 3D asset rendering inspired by Apple's Hypersim dataset.</li>
+              <li>Trained and evaluated 3D scene foundation models using GPU compute, computer vision, and generative modeling.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <span class="timeline-date mono">Jan 2024 — Present</span>
+            <span class="timeline-tag">Freelance · 2.5 yrs</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Freelance AI Engineer</h3>
+            <p class="timeline-company">Independent</p>
+            <ul class="timeline-points">
+              <li>Built an end-to-end text-to-video pipeline using LLM script generation, diffusion-based lip sync, audio-visual alignment, and voice cloning.</li>
+              <li>Built a RAG-based grading agent for schools in Kathmandu Valley using document retrieval and LLM reasoning.</li>
+              <li>Developed an AI-enabled Chrome extension for QA automation, reducing flaky frontend tests via dynamic selector mapping.</li>
+              <li>Built ultra-lightweight VLM-based deepfake detection achieving <strong>98.7% accuracy on seen generators</strong> and 87.3% on unseen.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <span class="timeline-date mono">Oct 2024 — Jan 2025</span>
+            <span class="timeline-tag">Teaching · 255+ hrs</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">AI & Programming Tutor</h3>
+            <p class="timeline-company">Independent</p>
+            <ul class="timeline-points">
+              <li>Delivered 255+ hours of Python, prompt engineering, agentic AI, and RAG training across individual clients and software fellowship cohorts.</li>
+              <li>Taught LLM application development: embeddings, retrieval, prompt design, API usage, evaluation, and Python automation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-meta">
+            <span class="timeline-date mono">Dec 2022 — Feb 2024</span>
+            <span class="timeline-tag">Fellowship · 15 months</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">AI Fellow</h3>
+            <p class="timeline-company">Fusemachines</p>
+            <ul class="timeline-points">
+              <li>Completed a year-long AI fellowship covering ML, deep learning, computer vision, NLP, model deployment, and production ML workflows.</li>
+              <li>Implemented and deployed deep learning models using Python, PyTorch/TensorFlow, preprocessing pipelines, and API integration.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS ░░ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">03 /</span> Projects</div>
+      <h2 class="section-heading reveal">Selected Work</h2>
+
+      <!-- Featured -->
+      <div class="featured-projects">
+
+        <div class="project-card featured reveal" data-index="01">
+          <div class="project-card-inner">
+            <div class="project-info">
+              <div class="project-header">
+                <span class="project-num mono">01</span>
+                <div class="project-badges">
+                  <span class="badge-pub">CVPR 2026 Workshop</span>
+                </div>
+              </div>
+              <h3 class="project-title">3D Indoor Scene Synthesis</h3>
+              <p class="project-desc">
+                Agentic AI optimization loop with RL fine-tuning so pretrained 3D scene generators satisfy functional constraints. Reduced scene collisions from 81% → 62% and out-of-boundary objects from 5% → 3%. Presented at CVPR 2026, Denver.
+              </p>
+              <div class="project-tech">
+                <span>3D Generative AI</span><span>RL</span><span>Three.js</span><span>FastAPI</span><span>DiffuScene</span>
+              </div>
+              <div class="project-links">
+                <a href="https://youtu.be/NSgp8T1xZ_g?si=KWSUJ2k4ktl39qOj" target="_blank" rel="noopener" class="proj-link proj-link-yt">▶ Demo Video</a>
+              </div>
+            </div>
+            <div class="project-media">
+              <img src="images/iARCS_poster.png" alt="3D Indoor Scene Synthesis — CVPR 2026 Workshop Poster" loading="lazy" />
+              <div class="project-media-overlay">
+                <img src="images/iARCS_cvpr.jpeg" alt="CVPR 2026 presentation" loading="lazy" class="media-secondary" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card featured reveal" data-index="02">
+          <div class="project-card-inner reverse">
+            <div class="project-info">
+              <div class="project-header">
+                <span class="project-num mono">02</span>
+                <div class="project-badges">
+                  <span class="badge-pub">Paper Under Review</span>
+                </div>
+              </div>
+              <h3 class="project-title">RL for Diffusion Post-Training</h3>
+              <p class="project-desc">
+                Novel RL-based post-training method for diffusion models that improves reward alignment while preserving image quality and diversity. Built automated evaluation pipelines for reward modeling, fidelity checks, and diversity metrics.
+              </p>
+              <div class="project-tech">
+                <span>Diffusion Models</span><span>RLHF</span><span>PyTorch</span><span>Eval Pipelines</span>
+              </div>
+              <div class="project-links">
+                <a href="images/new_rl_method_for_diffusion_to_avoid_diversity_collapse-1.png" target="_blank" rel="noopener" class="proj-link">View Results ↗</a>
+              </div>
+            </div>
+            <div class="project-media">
+              <img src="images/new_rl_method_for_diffusion_to_avoid_diversity_collapse-1.png" alt="RL for Diffusion — diversity collapse results" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Grid projects -->
+      <div class="projects-grid">
+
+        <div class="project-tile reveal">
+          <div class="tile-header">
+            <span class="project-num mono">03</span>
+            <a href="https://youtu.be/3gLn3fLFiSE?si=vSd7lqUEfieVOy6l" target="_blank" rel="noopener" class="tile-yt-btn" title="Watch demo">▶</a>
+          </div>
+          <h3 class="tile-title">Human Action Recognition</h3>
+          <p class="tile-desc">VideoMAE-based model with 95%+ accuracy on Nepali video datasets. Log-linear sequence scaling for efficient long-video inference. Built with Khalti.</p>
+          <div class="tile-tech"><span>VideoMAE</span><span>Video Transformer</span><span>PyTorch</span></div>
+          <div class="tile-links">
+            <a href="https://youtu.be/3gLn3fLFiSE?si=vSd7lqUEfieVOy6l" target="_blank" rel="noopener" class="proj-link-sm proj-link-yt">▶ Watch Demo</a>
+            <a href="https://github.com/ashok-neupane" target="_blank" rel="noopener" class="proj-link-sm">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-tile reveal">
+          <div class="tile-header">
+            <span class="project-num mono">04</span>
+            <span class="badge-win">KU Hackfest Winner</span>
+          </div>
+          <h3 class="tile-title">Fashion Virtual Try-On</h3>
+          <p class="tile-desc">Fine-tuned IDMD diffusion models for 20× faster virtual try-on without fidelity loss. Evaluated CatVTON, IDM-VTON, and OOTDiffusion pipelines. KU Hackfest AI Track Winner.</p>
+          <div class="tile-tech"><span>Diffusion</span><span>Computer Vision</span><span>Garment Transfer</span></div>
+        </div>
+
+        <div class="project-tile reveal">
+          <div class="tile-header">
+            <span class="project-num mono">05</span>
+            <a href="https://youtu.be/5lwiuEWD7ko?si=wKTjBbPl0GOW4Btt" target="_blank" rel="noopener" class="tile-yt-btn" title="Watch demo">▶</a>
+          </div>
+          <h3 class="tile-title">Olympic Sentiment Analysis</h3>
+          <p class="tile-desc">FastAPI + React web app with custom BERT model for real-time sentiment analysis of Olympic social media posts. GeeksForGeeks Hackathon runner-up.</p>
+          <div class="tile-tech"><span>BERT</span><span>FastAPI</span><span>React</span><span>NLP</span></div>
+          <div class="tile-links">
+            <a href="https://youtu.be/5lwiuEWD7ko?si=wKTjBbPl0GOW4Btt" target="_blank" rel="noopener" class="proj-link-sm proj-link-yt">▶ Watch Demo</a>
+          </div>
+        </div>
+
+        <div class="project-tile reveal">
+          <div class="tile-header">
+            <span class="project-num mono">06</span>
+          </div>
+          <h3 class="tile-title">Adaptive Traffic Light System</h3>
+          <p class="tile-desc">Intelligent traffic control using ESP32, Arduino, and computer vision for real-time vehicle detection and classification. Automated signal timing based on live traffic counts.</p>
+          <div class="tile-tech"><span>Computer Vision</span><span>IoT</span><span>ESP32</span><span>Arduino</span></div>
+          <div class="tile-links">
+            <a href="https://youtu.be/NSgp8T1xZ_g?si=KWSUJ2k4ktl39qOj" target="_blank" rel="noopener" class="proj-link-sm proj-link-yt">▶ Watch Demo</a>
+          </div>
+        </div>
+
+        <div class="project-tile reveal">
+          <div class="tile-header">
+            <span class="project-num mono">07</span>
+            <span class="badge-acc">98.7% Accuracy</span>
+          </div>
+          <h3 class="tile-title">VLM Deepfake Detection</h3>
+          <p class="tile-desc">Ultra-lightweight VLM system for real vs. AI-generated image classification. 98.7% on seen generators, 87.3% on unseen — strong generalization for a deployable solution.</p>
+          <div class="tile-tech"><span>VLM</span><span>PyTorch</span><span>Edge AI</span></div>
+        </div>
+
+        <div class="project-tile reveal">
+          <div class="tile-header">
+            <span class="project-num mono">08</span>
+          </div>
+          <h3 class="tile-title">RAG Grading Agent</h3>
+          <p class="tile-desc">End-to-end RAG pipeline for automated exam grading in Kathmandu Valley schools. Document retrieval, LLM reasoning, prompt evaluation, and workflow automation.</p>
+          <div class="tile-tech"><span>RAG</span><span>LangChain</span><span>LLMs</span><span>FastAPI</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ AWARDS ░░ -->
+  <section class="awards section" id="awards">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">04 /</span> Recognition</div>
+      <h2 class="section-heading reveal">Awards & Achievements</h2>
+      <div class="awards-grid">
+
+        <div class="award-card reveal">
+          <div class="award-img-wrap">
+            <img src="images/iARCS_cvpr.jpeg" alt="CVPR Workshop 2026 — 3D Scene Synthesis paper accepted and presented in Denver" loading="lazy" />
+          </div>
+          <div class="award-info">
+            <span class="award-year mono">2026</span>
+            <h3 class="award-title">CVPR 2026 Workshop</h3>
+            <p class="award-desc">3D Indoor Scene Synthesis paper accepted and presented at the 3rd Synthetic Data for Computer Vision Workshop, Denver, Colorado.</p>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-img-wrap">
+            <img src="images/ku_hackathon.jpg" alt="KU Hackfest AI Track Winner" loading="lazy" />
+          </div>
+          <div class="award-info">
+            <span class="award-year mono">Nov 2024</span>
+            <h3 class="award-title">KU Hackfest — AI Track Winner</h3>
+            <p class="award-desc">Won the AI track at KU Hackfest with the Fashion Virtual Try-On system powered by fine-tuned diffusion models.</p>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-img-wrap">
+            <img src="images/hackademia_runner_up.jpg" alt="Hackademia Best Presentation" loading="lazy" />
+          </div>
+          <div class="award-info">
+            <span class="award-year mono">Dec 2023</span>
+            <h3 class="award-title">Hackademia — Best Presentation</h3>
+            <p class="award-desc">Awarded Best Presentation at Hackademia for outstanding research communication and technical depth.</p>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-img-wrap">
+            <img src="images/hackademia2_runner_up.webp" alt="Hackademia 2 Best AI Product" loading="lazy" />
+          </div>
+          <div class="award-info">
+            <span class="award-year mono">Sep 2024</span>
+            <h3 class="award-title">Hackademia 2 — Best AI Product</h3>
+            <p class="award-desc">Recognized for the Best AI Product at Hackademia 2, demonstrating real-world impact and engineering quality.</p>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-img-wrap">
+            <img src="images/geekathon_runner_up.jpg" alt="GeeksForGeeks Geek-A-Thon Winner" loading="lazy" />
+          </div>
+          <div class="award-info">
+            <span class="award-year mono">Aug 2023</span>
+            <h3 class="award-title">Geek-A-Thon Winner</h3>
+            <p class="award-desc">Won the Geek-A-Thon hackathon organized by GeeksForGeeks, competing against top engineering students.</p>
+          </div>
+        </div>
+
+        <div class="award-card reveal">
+          <div class="award-img-wrap">
+            <img src="images/leo_club_ideathon_won.jpg" alt="Leo Club Ideathon Winner" loading="lazy" />
+          </div>
+          <div class="award-info">
+            <span class="award-year mono">Dec 2024</span>
+            <h3 class="award-title">Leo Club Ideathon Winner</h3>
+            <p class="award-desc">Won the Leo Club Ideathon for innovative AI-driven solution addressing real-world social challenges.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Other awards strip -->
+      <div class="awards-strip reveal">
+        <div class="strip-item"><span class="mono">·</span> Samsung Innovation Campus — Top 30 Nationally</div>
+        <div class="strip-item"><span class="mono">·</span> Gen AI & LLMs — Top 20, Pulchowk Campus</div>
+        <div class="strip-item"><span class="mono">·</span> Engen Hacks Winner · Oct 2023</div>
+        <div class="strip-item"><span class="mono">·</span> BE Model Winner · Pulchowk Campus · Jan 2024</div>
+        <div class="strip-item"><span class="mono">·</span> All Nepal Civil Engineering Model Winner · May 2025</div>
+        <div class="strip-item"><span class="mono">·</span> Civil Engineering Hackathon Winner · Dec 2024</div>
+        <div class="strip-item"><span class="mono">·</span> National Rank 47 / 15,000+ Engineering Candidates</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">05 /</span> Contact</div>
+      <div class="contact-inner">
+        <h2 class="contact-heading reveal">Let's Build Something.</h2>
+        <p class="contact-sub reveal">
+          I'm actively looking for AI engineering roles — production, research, or both.
+          If you're building something worth caring about, let's talk.
+        </p>
+        <div class="contact-links reveal">
+          <a href="mailto:neupane.ashok.9696@gmail.com" class="contact-link-main">
+            <span class="mono">→</span> neupane.ashok.9696@gmail.com
+          </a>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/ashok-prasad-neupane/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="https://github.com/ashok-neupane" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://medium.com/@neupane.ashok.9696" target="_blank" rel="noopener">Medium ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container">
+      <span class="mono footer-copy">© 2026 Ashok Prasad Neupane</span>
+      <span class="footer-tag">Kathmandu, Nepal 🇳🇵</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
