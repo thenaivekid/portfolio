@@ -102,3 +102,5 @@ p { margin-bottom: 10px; }
   .grid { grid-template-columns: 1fr; }
   .photos { grid-template-columns: repeat(2, 1fr); }
 }
+
+.topics { font-size: .85rem; color: #6b7280; margin-top: 6px; }

@@ -5,7 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashok Prasad Neupane — ML Researcher &amp; AI Engineer</title>
   <meta name="description" content="Ashok Prasad Neupane — ML researcher and AI engineer working on RL post-training of diffusion models, agentic RL, streaming VLMs, and browser-use agents." />
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="canonical" href="https://ashokpneupane.com.np/" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Ashok Prasad Neupane — ML Researcher &amp; AI Engineer" />
+  <meta property="og:url" content="https://ashokpneupane.com.np/" />
+  <meta property="og:description" content="Research on RL post-training of diffusion models (iADD), controllable 3D scene generation (iARCS) and training-free streaming VLMs (Foresight)." />
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Person",
+   "@id": "https://ashokpneupane.com.np/#me",
+   "name": "Ashok Prasad Neupane",
+   "url": "https://ashokpneupane.com.np/",
+   "jobTitle": "ML Researcher & AI Engineer",
+   "sameAs": [
+    "https://scholar.google.com/citations?user=q5bgiW0AAAAJ",
+    "https://github.com/thenaivekid",
+    "https://huggingface.co/thenaivekid",
+    "https://www.linkedin.com/in/ashok-neupane-156959232/"
+   ],
+   "knowsAbout": [
+    "reinforcement learning for diffusion models",
+    "3D scene generation",
+    "streaming vision-language models",
+    "agentic RL"
+   ]
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "headline": "iARCS: Iterative Agentic RL for Controllable 3D Scene Generation",
+   "url": "https://saugat2002.github.io/iarcs/",
+   "sameAs": "https://arxiv.org/abs/2608.06161",
+   "datePublished": "2026-08-07",
+   "author": {
+    "@id": "https://ashokpneupane.com.np/#me"
+   },
+   "keywords": "3D scene generation, indoor scene synthesis, reinforcement learning, DDPO, LLM reward design"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "headline": "Foresight: Planning Future Perception in Streaming VLMs without Retraining",
+   "url": "https://thenaivekid.github.io/foresight/",
+   "sameAs": "https://arxiv.org/abs/2610.03123",
+   "datePublished": "2026-10-02",
+   "author": {
+    "@id": "https://ashokpneupane.com.np/#me"
+   },
+   "keywords": "streaming video LLM, streaming VLM, proactive video understanding, training-free"
+  },
+  {
+   "@type": "ScholarlyArticle",
+   "headline": "iADD: Improving Alignment and Diversity in Diffusion Policy Optimization",
+   "url": "https://saugat2002.github.io/iadd/",
+   "sameAs": "https://arxiv.org/abs/2610.01789",
+   "datePublished": "2026-10-01",
+   "author": {
+    "@id": "https://ashokpneupane.com.np/#me"
+   },
+   "keywords": "diffusion policy optimization, RL fine-tuning diffusion models, DDPO, Feynman-Kac"
+  }
+ ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
 
@@ -52,20 +116,22 @@
     <h2>Publications</h2>
 
     <article class="pub">
-      <a class="thumb" href="https://iarcs-webpage.vercel.app/" target="_blank" rel="noopener">
+      <a class="thumb" href="https://saugat2002.github.io/iarcs/" target="_blank" rel="noopener">
         <img src="images/previews/iarcs.jpg" alt="Preview of the iARCS project page" loading="lazy" />
       </a>
       <div>
-        <h3><a href="https://iarcs-webpage.vercel.app/" target="_blank" rel="noopener">iARCS: Iterative Agentic RL for Controllable 3D Scene Generation</a></h3>
+        <h3><a href="https://saugat2002.github.io/iarcs/" target="_blank" rel="noopener">iARCS: Iterative Agentic RL for Controllable 3D Scene Generation</a></h3>
         <p class="meta">Saugat Adhikari*, <b>Ashok Prasad Neupane*</b>, Pramish Paudel, Ajad Chhatkuli, Danda Pani Paudel</p>
         <p class="venue">CVPR 2026 Workshop · extended version under review at WACV</p>
         <p>Agentic RL that adapts a pretrained 3D scene diffusion model to natural-language constraints using LLM-written reward programs refined in a reflection loop. Task success 4.5% → 73.8% (robot reachability) over MiDiffusion; 12K generated scenes released.</p>
         <p class="btns">
-          <a href="https://iarcs-webpage.vercel.app/" target="_blank" rel="noopener">Project Page</a>
+          <a href="https://saugat2002.github.io/iarcs/" target="_blank" rel="noopener">Project Page</a>
           <a href="https://arxiv.org/abs/2608.06161" target="_blank" rel="noopener">arXiv</a>
           <a href="https://github.com/thenaivekid/iARCS" target="_blank" rel="noopener">Code</a>
           <a href="https://huggingface.co/datasets/Saugat20021/iARCS" target="_blank" rel="noopener">Dataset</a>
+          <a href="https://huggingface.co/papers/2608.06161" target="_blank" rel="noopener">HF Paper</a>
         </p>
+        <p class="topics">Topics: controllable 3D scene generation · indoor scene synthesis · reinforcement learning for diffusion models (DDPO) · Eureka-style LLM reward design · embodied AI</p>
       </div>
     </article>
 
@@ -75,13 +141,16 @@
       </a>
       <div>
         <h3><a href="https://thenaivekid.github.io/foresight/" target="_blank" rel="noopener">Foresight: Planning Future Perception in Streaming VLMs without Retraining</a></h3>
-        <p class="meta"><b>Ashok Prasad Neupane</b> (first &amp; corresponding author), et al.</p>
+        <p class="meta"><b>Ashok Prasad Neupane*</b> (corresponding), Dipan Bartaula*, Ankit Belbase, Saugat Adhikari, Samip Ghimire, Saroj Poudel, Binod Bhattarai, Danda Pani Paudel</p>
         <p class="venue">Under review at ICLR</p>
         <p>Training-free dual-stream architecture: two Siamese LLMs sharing weights and KV cache — one ingests frames, the other plans when to reason and what to check. With a frozen Qwen3-VL-8B, beats the strongest <em>trained</em> baseline by 9.5% on OmniPro Online; +6.7 on StreamingBench and +15.4 on OVO-Bench.</p>
         <p class="btns">
           <a href="https://thenaivekid.github.io/foresight/" target="_blank" rel="noopener">Project Page</a>
+          <a href="https://arxiv.org/abs/2610.03123" target="_blank" rel="noopener">arXiv</a>
           <a href="https://github.com/thenaivekid/foresight" target="_blank" rel="noopener">Code</a>
+          <a href="https://huggingface.co/papers/2610.03123" target="_blank" rel="noopener">HF Paper</a>
         </p>
+        <p class="topics">Topics: streaming video LLM · streaming VLM · proactive real-time video understanding · training-free · asynchronous inference</p>
       </div>
     </article>
 
@@ -96,8 +165,11 @@
         <p>Shows late-timestep-only RL updates harm diversity and proposes incremental-timestep training with Feynman–Kac particle guidance. Rare-prompt success 24.8% → 66.9%; reward–diversity AUC 53.8% → 77.7% vs. DDPO.</p>
         <p class="btns">
           <a href="https://saugat2002.github.io/iadd/" target="_blank" rel="noopener">Project Page</a>
+          <a href="https://arxiv.org/abs/2610.01789" target="_blank" rel="noopener">arXiv</a>
           <a href="https://github.com/Saugat2002/iADD" target="_blank" rel="noopener">Code</a>
+          <a href="https://huggingface.co/papers/2610.01789" target="_blank" rel="noopener">HF Paper</a>
         </p>
+        <p class="topics">Topics: diffusion policy optimization · RL fine-tuning of diffusion models (RLHF) · DDPO · Feynman-Kac steering · mode collapse and reward hacking</p>
       </div>
     </article>
     <p class="note">* equal contribution</p>
